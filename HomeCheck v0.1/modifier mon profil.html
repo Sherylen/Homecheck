@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="modifierMonProfil.css">
+        <title>HomeCheck</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <form method="post" action="traduction.php">
+                <p class="menu">
+                    <span><img src="image/logo.jpg" alt="logo_homecheck"></span>
+                    <span>
+                    <span><img src="image/slogan.png" alt="slogan"></span>
+                <span>
+                    <label for="langue1"></label>
+                    <input class="langue1" type="image" src="image/francais.png" title="Français" />
+                </span>
+                <span>
+                    <label for="langue2"></label>
+                    <input class="langue2" type="image" src="image/anglais.png" title="English" />
+                </span>
+                </p>
+            </form>
+            
+                <nav>
+                    <span class="boite"><a href="a propos de homecheck.html">  A propos de HomeCheck  </a></span>
+                    <span class="boite"><a href="mes logements.html">  Mes logements  </a></span>
+                    <span class="boite"><a href="mon profil.html">  Mon profil  </a></span>
+                    <span class="boite"><a href="contactez-nous.html">  Contactez-nous  </a></span>
+                    <form method="^post" action="recherche.php">
+                        <span class="rechercher">
+                            <label for="recherche"></label>
+                            <input type="search" name="recherche" id="recherche" placeholder="Rechercher" />
+                            <input type="submit" value="Go!">
+                        </span>
+                    </form>
+                </nav>
+            
+            <form method="post" action="deconnexion.php">
+                <p>
+                    <label for="deconnexion"></label>
+                    <input class="deconnexion" type="image" src="image/deconnexion.png" title="déconnexion" />
+                </p>
+            </form>
+
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+            
+            <form method="post" action="modifier_profil.php">
+                <p class="modif">
+                <input class="profil" type="image" src="image/profil.png" title="Modifier la photo de profil">
+                <table>
+                    <tr>
+                        <td><label for="nom">Nom :</label></td>
+                        <td><input type="text" name="nom" id="nom"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+
+                        <td><label for="prenom">Prénom :</label></td>
+                        <td><input type="text" name="prenom" id="prenom"/></td>
+                    </tr>
+                    <tr>
+                    <br>
+                        <td><label for="date">Date de naissance :</label></td>
+                        <td><input type="tel" name="date" id="date"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="tel">Téléphone :</label></td>
+                        <td><input type="tel" name="tel" id="tel"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="Email">Email :</label></td>
+                        <td><input type="email" name="email" id="email"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="adresse">Adresse :</label></td>
+                        <td><input type="text" name="adresse" id="adresse"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="complement">Complément d'adresse :</label></td>
+                        <td><input type="text" name="complement" id="complement"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="code_postal"> Code postal :</label></td>
+                        <td><input type="tel" name="code" id="code"/></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="ville">Ville :</label></td>
+                        <td><input type="texte" name="ville" id="ville"/></td>
+                    </tr>
+            </table>
+            <br>
+            <input class="enregistrer" type="submit" value="Enregistrer" />
+            </p>
+        </form>
+        
+        
+    
+        </br>
+        </br>
+        <footer>
+            Tous droits réservés ©
+        </footer>
+    </body>
+</html>
