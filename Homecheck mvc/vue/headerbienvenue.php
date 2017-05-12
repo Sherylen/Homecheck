@@ -11,7 +11,7 @@
 					</div>
 				
 					<div id="inscription">
-						<form class="inscription" method="post" action="vuegeneral.php" >
+						<form class="inscription" method="post" action="Modele/headerbienvenue.php" >
 							<label for=" pseudo" > Votre pseudo : </label> 
 							<input type="text" name="Pseudo" id="Pseudo" placeholder="Pseudo ou mail..."/>
 
