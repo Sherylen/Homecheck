@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+
+<?php
+
+// Sous xAMP (Windows)
+
+$bdd = new PDO('mysql:host=localhost;dbname=homecheck;charset=utf8', 'root', '');
+
+?> 
+
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="SITE.css" />
@@ -22,9 +31,40 @@
 
                      <a class="centrer" href="modifierMonProfil.php"><div class="modifierProfil"> Modifier mon profil </div></a>
                 </div>
-               
+                
+                <?php 
+                    if(isset($_POST['enregistrer'])) { 
+
+                        if(isset($_POST['nom'])) { 
+
+                            $nom = $_POST['nom'];
+                        }
+
+                        if(isset($_POST['prenom'])) { 
+
+                            $prenom = $_POST['prenom'];
+                        }
+
+                   
+                        if(isset($_POST['date'])) { 
+
+                            $date = $_POST['date'];
+                        }
+
+                    }
+
+                ?> 
              <ul class="info">
-                     <p> Jeremie SUBLIME <br/> <br/>
+              <p>    <?php echo $nom + " " + $prenom; ?>  <br/> <br/>
+                     Né le <?php echo (int)($date); ?> <br/> <br/>
+                     Tel : <?php echo (int)($_POST['tel']); ?> <br/> <br/>
+                    <?php echo htmlspecialchars($_POST['email']); ?> <br/> <br/>
+            </p>
+            <p> 
+                    <?php echo $_POST['numeroDeRue' . " ".'adresse']; ?> <br/> <br/>
+                    <?php echo $_POST['code'. " ". "ville"]); ?>  <br/> <br/>
+            </p>
+                   <!--  <p> Jeremie SUBLIME <br/> <br/>
                      Né le ../../.. <br/><br/>
                      tel: 06 00 00 00 00 <br/><br/>
                      jeremie.sublime@isep.fr <br/><br/>
@@ -32,7 +72,7 @@
 
                      <p> 10 rue de Vanves <br/><br/>
                      92130 Issy les Moulineaux <br/><br/>
-                    </p>
+                    </p> !-->
             </ul>
         </div>
         

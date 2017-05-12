@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+
+<?php
+
+// Sous xAMP (Windows)
+
+$bdd = new PDO('mysql:host=localhost;dbname=bdd;charset=utf8', 'root', '');
+
+?> 
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="SITE2.css" />
@@ -24,7 +32,6 @@
         
         <p class="textec">
             Grâce à HomeCheck, vous avez accès à votre habitation où que vous soyez dans le monde. En effet, notre plateforme est accessible dans tous les pays du monde grâce à une connection internet suffisante. HomeCheck à une dimension internationale, notre plateforme est configurable en Anglais et en Français.
-    
         </p>
         
         <p class="textec"> Blabla à continuer je suis à court d'idées et d'inspiration</p>
@@ -37,18 +44,18 @@
             <tr>
                 <td class="tdc">
                 
-                     <form method="post" action="AProposDeHomecheck.php">
+                     <form method="post" action="#.php">
                                 <br/>
                                 <img src="image/enveloppe.png" class="flottant" alt="image_enveloppe"/>
 
                                 <br/>
             
                                 <label for="Nom">Nom :</label>
-                                <input type="text" name="nom" id="nom" placeholder="Ex : Jérémie" required />
+                                <input type="text" name="nom" id="nom" placeholder="Ex : Jérémie" required  />
                                             <br/>
                                              <br/>
                                 <label for="Email">Email :</label>
-                                <input type="email" name="email" id="email" required/>
+                                <input type="email" name="email" id="email" required />
                                              <br/>
                                              <br/>
 

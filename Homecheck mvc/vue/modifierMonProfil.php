@@ -1,3 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+
+<?php
+
+// Sous xAMP (Windows)
+
+$bdd = new PDO('mysql:host=localhost;dbname=homecheck;charset=utf8', 'root', '');
+
+?> 
+
 <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="SITE2.css" />
@@ -11,14 +23,14 @@
         <div>
           <div class="box7">
             
-            <div method="post" action="modifier_photo.php">
+            <div method="post" action="MonProfil.php">
                 <p class="modif_photo">
                     <label for="photo_profil"></label>
                     <input type="image" src="image/Msublime.jpg" title="Modifier la photo de profil" alt="Photo de profil" />
                 </p>
 
             </div>
-            <form method="post" action="modifier_profil.php">
+            <form method="post" action="MonProfil.php">
                 <p class="modif">
                 <table class="modifier">
                     <tr>
@@ -46,13 +58,13 @@
                     </tr>
                   
                     <tr>
-                        <td class="td3"><label for="adresse">Adresse </label></td>
-                        <td class="td3"><input type="text" name="adresse" id="adresse"/></td>
+                        <td class="td3"><label for="adresse">Numéro de rue </label></td>
+                        <td class="td3"><input type="text" name="numeroDeRue" id="NumeroDeRue"/></td>
                     </tr>
                    
                     <tr>
-                        <td class="td3"><label for="complement">Complément d'adresse </label></td>
-                        <td class="td3"><input type="text" name="complement" id="complement"/></td>
+                        <td class="td3"><label for="complement"> Adresse </label></td>
+                        <td class="td3"><input type="text" name="adresse" id="adresse"/></td>
                     </tr>
                    
                     <tr>
@@ -67,13 +79,11 @@
                  </table>
                     <br/>
                     <br/>
+                     <input class="enregistrer" type="submit" name="enregistrer" value="Enregistrer" />
                 </p>
           </form>
+           
           </div>
-            <input class="enregistrer" type="submit" value="Enregistrer" />
-            
-        
-        
     
      </div>
 
