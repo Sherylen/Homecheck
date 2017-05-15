@@ -1,4 +1,6 @@
-
+.fond{
+    background-color: grey;
+}
 
 /*******************
 PAGE POP UP 
@@ -81,9 +83,10 @@ PAGE POP UP
 
 .croix2 {
     position:relative;
-    right :-570px;
-    top : 5px;
+    right :-605px;
+    top : -27px;
 }
+
 
 /******************************
      FIN AJOUT DE CAPTEUR 
